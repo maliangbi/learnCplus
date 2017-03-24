@@ -11,19 +11,19 @@ int main(){
 	std::cout << "in main" << std::endl;
 	function();
 	std::cout << "back in main" << std::endl;
-	//Ê¹ÓÃ±ê×¼ÃüÃû¿Õ¼äµÄÁ½ÖÖ¼¼ÇÉ£º
-	//first method:using std£º£ºcout;using std::endl;
-	//second method£ºusing namespace std;
+	//ä½¿ç”¨æ ‡å‡†å‘½åç©ºé—´çš„ä¸¤ç§æŠ€å·§ï¼š
+	//first method:using stdï¼šï¼šcout;using std::endl;
+	//second methodï¼šusing namespace std;
 	std::cout << "the size of int is " 
-	//sizeof()·µ»ØµÄÊÇ×Ö½ÚÊı.
-	//ÔÚC++ÖĞ£¬½«ºöÂÔ¿Õ°×ĞĞ
+	//sizeof()è¿”å›çš„æ˜¯å­—èŠ‚æ•°.
+	//åœ¨C++ä¸­ï¼Œå°†å¿½ç•¥ç©ºç™½è¡Œ
 	<< sizeof(int) <<" bytes"<< std::endl;
-	//floatºÍdoubleÀàĞÍÄÜ´æ´¢µÄÊı×ÖºÜ´ó£¬µ«ÊÇÒ»°ãÖ»ÓĞÇ°¼¸Î»ÓĞĞ§£¬ºóÃæµÄÒ»°ã»áËÄÉáÎåÈë¡£ÔÚ¼ÆËã»úÖĞ£¬
-	//Ì«´óµÄÊı½«»áÓÃ¿ÆÑ§¼ÆÊı·¢±íÊ¾
+	//floatå’Œdoubleç±»å‹èƒ½å­˜å‚¨çš„æ•°å­—å¾ˆå¤§ï¼Œä½†æ˜¯ä¸€èˆ¬åªæœ‰å‰å‡ ä½æœ‰æ•ˆï¼Œåé¢çš„ä¸€èˆ¬ä¼šå››èˆäº”å…¥ã€‚åœ¨è®¡ç®—æœºä¸­ï¼Œ
+	//å¤ªå¤§çš„æ•°å°†ä¼šç”¨ç§‘å­¦è®¡æ•°å‘è¡¨ç¤º
 	float f=19826755367972.0;
 	std::cout << f << std::endl;
 	
-	//Êı¾İµÄ»ØÈÆ£ºÔÚ³¬¹ıÊı¾İÀàĞÍËùÔÊĞíµÄ·¶Î§Ê±£ºÊı¾İ½«»á»ØÈÆ
+	//æ•°æ®çš„å›ç»•ï¼šåœ¨è¶…è¿‡æ•°æ®ç±»å‹æ‰€å…è®¸çš„èŒƒå›´æ—¶ï¼šæ•°æ®å°†ä¼šå›ç»•
 	unsigned short int smallNum = 65535;
 	std::cout << smallNum << std::endl
 		<< smallNum++ << std::endl
@@ -33,7 +33,7 @@ int main(){
 		<< small++ << std::endl
 		<< small++ << std::endl;
 
-	//ÒÔÏÂÁ½¶ÎforÑ­»·×÷ÓÃĞÎÍ¬
+	//ä»¥ä¸‹ä¸¤æ®µforå¾ªç¯ä½œç”¨å½¢åŒ
 	for (int i = 32; i < 128; i++){
 		std::cout << char(i) << std::endl;
 	}
@@ -41,9 +41,9 @@ int main(){
 		std::cout << i << std::endl;
 	}
 	 
-	//Ã¶¾Ù
+	//æšä¸¾
 	enum COLOR{ RED, GREEN, BLACK, WHITE };
-	//COLORµÄÖµÖ»ÄÜÊÇÃ¶¾ÙÀàĞÍÖĞ¶¨ÒåºÃµÄÖµ
+	//COLORçš„å€¼åªèƒ½æ˜¯æšä¸¾ç±»å‹ä¸­å®šä¹‰å¥½çš„å€¼
 	COLOR i = GREEN;
 	std::cout << i << std::endl;
 
